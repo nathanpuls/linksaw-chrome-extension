@@ -1,0 +1,23 @@
+{
+  "name": "Add to linksaw.com",
+  "description": "A chrome extension to add the current website as a new link to linksaw.com.",
+  "version": "1.0",
+  "manifest_version": 2,
+  "icons": {
+    "16": "icon16.png",
+    "48": "icon48.png",
+    "128": "icon128.png"
+  },
+  "permissions": [
+    "activeTab",
+    "https://linksaw.com/*"
+  ],
+  "browser_action": {
+    "default_icon": {
+      "16": "icon16.png",
+      "48": "icon48.png",
+      "128": "icon128.png"
+    },
+    "default_popup": "popup.html"
+  }
+}
