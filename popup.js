@@ -10,10 +10,11 @@ chrome.tabs.query({active: true, currentWindow: true}, function(tabs) {
   };
 
   // send HTTP POST request to linksaw.com API
-  fetch('https://linksaw.com/api/links', {
+  fetch('https://linksaw.com/version-test/api/1.1/obj/linksaw-link', {
     method: 'POST',
     headers: {
       'Content-Type': 'application/json'
+      'Authorization': 'Bearer f9675d96c80ea804eb7b9f5a6273e6f4'
     },
     body: JSON.stringify(linkData)
   })
